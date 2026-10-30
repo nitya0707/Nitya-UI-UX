@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+"""
+Generate high-fidelity vector screenshots and design system assets
+for the AeroBiome Figma UI/UX Project.
+"""
+import os
+
+os.makedirs("assets", exist_ok=True)
+os.makedirs("screenshots", exist_ok=True)
+
+# 1. Brand Logo (assets/aerobiome_logo.svg)
+logo_svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Logo Icon -->
+  <g transform="translate(10, 8)">
+    <!-- Halo Ring -->
+    <circle cx="22" cy="22" r="20" fill="none" stroke="url(#ringGrad)" stroke-width="2.5" opacity="0.8"/>
+    <!-- Ambient Pulse Center -->
+    <circle cx="22" cy="22" r="14" fill="#10B981" fill-opacity="0.12" filter="url(#glow)"/>
+    <!-- Organic Leaf / Wave Path -->
+    <path d="M 22 9 C 27 15 32 20 32 27 C 32 33 27 36 22 36 C 17 36 12 33 12 27 C 12 20 17 15 22 9 Z" fill="url(#leafGrad)"/>
+    <!-- Circadian Core Dot -->
+    <circle cx="22" cy="24" r="3" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Brand Wordmark -->
+  <text x="64" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="#F8FAFC">AERO<tspan fill="#34D399">BIOME</tspan></text>
+  <text x="65" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="9" font-weight="600" letter-spacing="2.5" fill="#94A3B8">CIRCADIAN ECOSYSTEM</text>
+</svg>"""
+
+with open("assets/aerobiome_logo.svg", "w") as f:
+    f.write(logo_svg)
+
+print("Created assets/aerobiome_logo.svg")

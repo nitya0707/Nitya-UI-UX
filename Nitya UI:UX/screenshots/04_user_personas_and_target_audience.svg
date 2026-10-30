@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C0D"/>
+      <stop offset="100%" stop-color="#0E151A"/>
+    </linearGradient>
+    <linearGradient id="pGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="pGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif; }
+    .mono { font-family: 'SF Mono', Consolas, 'Fira Code', monospace; }
+  </style>
+
+  <rect width="1440" height="900" fill="url(#bgGrad4)"/>
+
+  <!-- Canvas Header -->
+  <g transform="translate(60, 40)">
+    <rect width="1320" height="70" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="30" y="35" class="font-sans" font-size="20" font-weight="800" fill="#F8FAFC">USER RESEARCH • TARGET AUDIENCE &amp; DETAILED PERSONAS</text>
+    <text x="30" y="55" class="font-sans mono" font-size="12" fill="#34D399">Empathy Mapping • Core User Needs • Design Choices Alignment</text>
+    <rect x="1150" y="20" width="140" height="30" rx="8" fill="rgba(16,185,129,0.15)" stroke="#10B981"/>
+    <text x="1220" y="40" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#34D399">USER INSIGHTS</text>
+  </g>
+
+  <!-- PERSONA 1: Maya Lin (Senior Product Designer) -->
+  <g transform="translate(60, 140)">
+    <rect width="640" height="710" rx="20" fill="url(#pGrad1)" stroke="rgba(16,185,129,0.3)" stroke-width="1.5"/>
+    
+    <g transform="translate(32, 32)">
+      <!-- Avatar & Bio Header -->
+      <circle cx="40" cy="40" r="40" fill="#047857" stroke="#34D399" stroke-width="2"/>
+      <!-- Stylized face illustration -->
+      <circle cx="40" cy="32" r="14" fill="#FDE68A"/>
+      <path d="M 22 66 C 22 52 32 48 40 48 C 48 48 58 52 58 66 Z" fill="#10B981"/>
+      <path d="M 26 28 C 26 16 38 12 48 16 C 54 20 54 28 54 28 Z" fill="#451A03"/>
+
+      <!-- Name & Title -->
+      <text x="100" y="30" class="font-sans" font-size="22" font-weight="800" fill="#F8FAFC">Maya Lin, 29</text>
+      <text x="100" y="52" class="font-sans" font-size="14" font-weight="600" fill="#34D399">Senior Product Designer &amp; Design Lead</text>
+      <text x="100" y="70" class="font-sans mono" font-size="11" fill="#94A3B8">Location: San Francisco, CA • Remote Workspace (10h/day)</text>
+
+      <!-- Key Quote -->
+      <g transform="translate(0, 100)">
+        <rect width="576" height="54" rx="10" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)"/>
+        <text x="16" y="32" class="font-sans" font-style="italic" font-size="13" fill="#E2E8F0">
+          "I stare at Figma and dual 4K monitors all day. By 4 PM my eyes throb and indoor air feels stale."
+        </text>
+      </g>
+
+      <!-- Goals & Motivations -->
+      <g transform="translate(0, 175)">
+        <text x="0" y="16" class="font-sans" font-size="14" font-weight="700" fill="#34D399">🎯 CORE GOALS &amp; WORKFLOW</text>
+        <text x="0" y="40" class="font-sans" font-size="13" fill="#F8FAFC">• Eliminate evening blue-light eye strain without disturbing creative flow</text>
+        <text x="0" y="64" class="font-sans" font-size="13" fill="#F8FAFC">• Maintain a minimalist, biophilic aesthetic that looks inspiring on camera</text>
+        <text x="0" y="88" class="font-sans" font-size="13" fill="#F8FAFC">• Avoid hospital-like noisy air filters that vibrate or ruin podcast audio</text>
+      </g>
+
+      <!-- Pain Points -->
+      <g transform="translate(0, 290)">
+        <text x="0" y="16" class="font-sans" font-size="14" font-weight="700" fill="#EF4444">⚠️ USER PAIN POINTS</text>
+        <text x="0" y="40" class="font-sans" font-size="13" fill="#CBD5E1">• High CO2 build-up causes mental fog around 3:30 PM</text>
+        <text x="0" y="64" class="font-sans" font-size="13" fill="#CBD5E1">• Artificial overhead LED lighting destroys circadian sleep schedule</text>
+        <text x="0" y="88" class="font-sans" font-size="13" fill="#CBD5E1">• Hates bulky plastic gadgets with annoying bright blue LEDs</text>
+      </g>
+
+      <!-- Design Choices Response -->
+      <g transform="translate(0, 405)">
+        <text x="0" y="16" class="font-sans" font-size="14" font-weight="700" fill="#F59E0B">💡 FIGMA DESIGN CHOICES FOR MAYA</text>
+        <rect y="26" width="576" height="180" rx="12" fill="rgba(0,0,0,0.4)" stroke="rgba(245,158,11,0.2)"/>
+        <text x="16" y="52" class="font-sans" font-size="12" font-weight="600" fill="#F59E0B">1. Dark Obsidian Canvas (#090D0E):</text>
+        <text x="16" y="70" class="font-sans" font-size="12" fill="#94A3B8">Mimics her dark-themed design software, providing instant visual relief.</text>
+        
+        <text x="16" y="98" class="font-sans" font-size="12" font-weight="600" fill="#F59E0B">2. Hero Biophilic 3D Focus:</text>
+        <text x="16" y="116" class="font-sans" font-size="12" fill="#94A3B8">Positions the living moss chamber front-and-center, appealing to her design taste.</text>
+
+        <text x="16" y="144" class="font-sans" font-size="12" font-weight="600" fill="#F59E0B">3. Single-Click Pre-Order Auto Layout CTAs:</text>
+        <text x="16" y="162" class="font-sans" font-size="12" fill="#94A3B8">High-contrast emerald buttons with clear hierarchy save cognitive effort.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- PERSONA 2: David Chen (Lead Infrastructure Engineer) -->
+  <g transform="translate(740, 140)">
+    <rect width="640" height="710" rx="20" fill="url(#pGrad2)" stroke="rgba(6,182,212,0.3)" stroke-width="1.5"/>
+    
+    <g transform="translate(32, 32)">
+      <!-- Avatar & Bio Header -->
+      <circle cx="40" cy="40" r="40" fill="#0E7490" stroke="#06B6D4" stroke-width="2"/>
+      <circle cx="40" cy="32" r="14" fill="#FBCFE8"/>
+      <path d="M 22 66 C 22 52 32 48 40 48 C 48 48 58 52 58 66 Z" fill="#0284C7"/>
+      <!-- Glasses -->
+      <rect x="29" y="28" width="10" height="8" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+      <rect x="41" y="28" width="10" height="8" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+      <line x1="39" y1="32" x2="41" y2="32" stroke="#FFFFFF" stroke-width="1.5"/>
+
+      <!-- Name & Title -->
+      <text x="100" y="30" class="font-sans" font-size="22" font-weight="800" fill="#F8FAFC">David Chen, 34</text>
+      <text x="100" y="52" class="font-sans" font-size="14" font-weight="600" fill="#06B6D4">Lead Cloud Architect &amp; Bio-Hacker</text>
+      <text x="100" y="70" class="font-sans mono" font-size="11" fill="#94A3B8">Location: Austin, TX • Smart Home Office • Metrics Obsessed</text>
+
+      <!-- Key Quote -->
+      <g transform="translate(0, 100)">
+        <rect width="576" height="54" rx="10" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)"/>
+        <text x="16" y="32" class="font-sans" font-style="italic" font-size="13" fill="#E2E8F0">
+          "If I can't measure it via API or telemetry, it's snake oil. Show me the parts per million and decibels."
+        </text>
+      </g>
+
+      <!-- Goals & Motivations -->
+      <g transform="translate(0, 175)">
+        <text x="0" y="16" class="font-sans" font-size="14" font-weight="700" fill="#06B6D4">🎯 CORE GOALS &amp; WORKFLOW</text>
+        <text x="0" y="40" class="font-sans" font-size="13" fill="#F8FAFC">• Measure home office air quality (VOCs, CO2, PM2.5) with real telemetry</text>
+        <text x="0" y="64" class="font-sans" font-size="13" fill="#F8FAFC">• Maximize deep coding sessions without cognitive slump</text>
+        <text x="0" y="88" class="font-sans" font-size="13" fill="#F8FAFC">• Integrate workspace devices with Home Assistant / Apple HomeKit</text>
+      </g>
+
+      <!-- Pain Points -->
+      <g transform="translate(0, 290)">
+        <text x="0" y="16" class="font-sans" font-size="14" font-weight="700" fill="#EF4444">⚠️ USER PAIN POINTS</text>
+        <text x="0" y="40" class="font-sans" font-size="13" fill="#CBD5E1">• High carbon dioxide concentration spikes past 1400 ppm unnoticed</text>
+        <text x="0" y="64" class="font-sans" font-size="13" fill="#CBD5E1">• Purifier fan whine irritates his noise-canceling headphones</text>
+        <text x="0" y="88" class="font-sans" font-size="13" fill="#CBD5E1">• Frustrated by marketing jargon that hides technical specifications</text>
+      </g>
+
+      <!-- Design Choices Response -->
+      <g transform="translate(0, 405)">
+        <text x="0" y="16" class="font-sans" font-size="14" font-weight="700" fill="#06B6D4">💡 FIGMA DESIGN CHOICES FOR DAVID</text>
+        <rect y="26" width="576" height="180" rx="12" fill="rgba(0,0,0,0.4)" stroke="rgba(6,182,212,0.2)"/>
+        <text x="16" y="52" class="font-sans" font-size="12" font-weight="600" fill="#06B6D4">1. Floating Live Telemetry HUD Widget:</text>
+        <text x="16" y="70" class="font-sans" font-size="12" fill="#94A3B8">Presents instant real-time data (99.8 AQI, &lt;18dB, 1800K) right in hero.</text>
+        
+        <text x="16" y="98" class="font-sans" font-size="12" font-weight="600" fill="#06B6D4">2. SensorIQ™ Dedicated Feature Card:</text>
+        <text x="16" y="116" class="font-sans" font-size="12" fill="#94A3B8">Highlights 500ms multi-gas spectrometry and open API integration.</text>
+
+        <text x="16" y="144" class="font-sans" font-size="12" font-weight="600" fill="#06B6D4">3. Quantitative Metrics Ticker in Hero:</text>
+        <text x="16" y="162" class="font-sans" font-size="12" fill="#94A3B8">Delivers verifiable proof points immediately above the fold.</text>
+      </g>
+    </g>
+  </g>
+</svg>

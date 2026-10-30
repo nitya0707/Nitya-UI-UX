@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B0D"/>
+      <stop offset="100%" stop-color="#0F1418"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif; }
+    .mono { font-family: 'SF Mono', Consolas, 'Fira Code', monospace; }
+  </style>
+
+  <rect width="1440" height="900" fill="url(#bgGrad3)"/>
+
+  <!-- Canvas Header -->
+  <g transform="translate(60, 40)">
+    <rect width="1320" height="70" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="30" y="35" class="font-sans" font-size="20" font-weight="800" fill="#F8FAFC">❖ DESIGN TOKENS • COLOR PALETTE &amp; TYPOGRAPHY SCALE</text>
+    <text x="30" y="55" class="font-sans mono" font-size="12" fill="#34D399">Shared Figma Styles • 8-Point Spatial Grid • WCAG 2.1 AA/AAA Contrast Verified</text>
+    <rect x="1150" y="20" width="140" height="30" rx="8" fill="rgba(16,185,129,0.15)" stroke="#10B981"/>
+    <text x="1220" y="40" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#34D399">TOKENS V1.0</text>
+  </g>
+
+  <!-- LEFT COLUMN: Color Swatches & Tokens (Width 640px) -->
+  <g transform="translate(60, 140)">
+    <rect width="640" height="710" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)"/>
+    
+    <g transform="translate(24, 24)">
+      <text x="0" y="16" class="font-sans" font-size="16" font-weight="700" fill="#F8FAFC">SHARED COLOR TOKENS &amp; PALETTE</text>
+      <text x="0" y="34" class="font-sans mono" font-size="11" fill="#64748B">Semantic Design Token Architecture with Hex, RGB &amp; Contrast</text>
+
+      <!-- Swatch 1: Primary Emerald -->
+      <g transform="translate(0, 50)">
+        <rect width="100" height="70" rx="12" fill="#10B981"/>
+        <text x="116" y="24" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF">Primary / Emerald Glow</text>
+        <text x="116" y="44" class="font-sans mono" font-size="12" fill="#34D399">HEX: #10B981 • RGB: rgb(16, 185, 129)</text>
+        <text x="116" y="62" class="font-sans" font-size="11" fill="#94A3B8">Usage: Primary CTAs, active status, bio-growth indicators (WCAG AAA)</text>
+      </g>
+
+      <!-- Swatch 2: Luminescent Mint -->
+      <g transform="translate(0, 134)">
+        <rect width="100" height="70" rx="12" fill="#34D399"/>
+        <text x="116" y="24" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF">Accent / Luminescent Mint</text>
+        <text x="116" y="44" class="font-sans mono" font-size="12" fill="#34D399">HEX: #34D399 • RGB: rgb(52, 211, 153)</text>
+        <text x="116" y="62" class="font-sans" font-size="11" fill="#94A3B8">Usage: Interactive hover states, glow filters, highlight text</text>
+      </g>
+
+      <!-- Swatch 3: Solar Amber -->
+      <g transform="translate(0, 218)">
+        <rect width="100" height="70" rx="12" fill="#F59E0B"/>
+        <text x="116" y="24" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF">Secondary / Solar Amber</text>
+        <text x="116" y="44" class="font-sans mono" font-size="12" fill="#F59E0B">HEX: #F59E0B • RGB: rgb(245, 158, 11)</text>
+        <text x="116" y="62" class="font-sans" font-size="11" fill="#94A3B8">Usage: Circadian evening photon mode, sunset alert warnings</text>
+      </g>
+
+      <!-- Swatch 4: Deep Obsidian Canvas -->
+      <g transform="translate(0, 302)">
+        <rect width="100" height="70" rx="12" fill="#090D0E" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <text x="116" y="24" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF">Background / Deep Obsidian</text>
+        <text x="116" y="44" class="font-sans mono" font-size="12" fill="#94A3B8">HEX: #090D0E • Base Canvas</text>
+        <text x="116" y="62" class="font-sans" font-size="11" fill="#94A3B8">Usage: Primary dark mode background, eliminates blue light strain</text>
+      </g>
+
+      <!-- Swatch 5: Elevated Card Surface -->
+      <g transform="translate(0, 386)">
+        <rect width="100" height="70" rx="12" fill="#11181C" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+        <text x="116" y="24" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF">Surface / Glass Card Elevated</text>
+        <text x="116" y="44" class="font-sans mono" font-size="12" fill="#94A3B8">HEX: #11181C • Surface 80% with Blur</text>
+        <text x="116" y="62" class="font-sans" font-size="11" fill="#94A3B8">Usage: Feature card containers, header glass backdrop, dialogs</text>
+      </g>
+
+      <!-- Swatch 6: Typography Text Slate White -->
+      <g transform="translate(0, 470)">
+        <rect width="100" height="70" rx="12" fill="#F8FAFC"/>
+        <text x="116" y="24" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF">Text / Slate White (Primary)</text>
+        <text x="116" y="44" class="font-sans mono" font-size="12" fill="#94A3B8">HEX: #F8FAFC • Contrast 16.8:1 (AAA)</text>
+        <text x="116" y="62" class="font-sans" font-size="11" fill="#94A3B8">Usage: Main headlines, button text, high-emphasis copy</text>
+      </g>
+
+      <!-- Swatch 7: Muted Secondary Text -->
+      <g transform="translate(0, 554)">
+        <rect width="100" height="70" rx="12" fill="#94A3B8"/>
+        <text x="116" y="24" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF">Text / Muted Slate (Secondary)</text>
+        <text x="116" y="44" class="font-sans mono" font-size="12" fill="#94A3B8">HEX: #94A3B8 • Contrast 6.4:1 (AA)</text>
+        <text x="116" y="62" class="font-sans" font-size="11" fill="#94A3B8">Usage: Body descriptions, timestamps, subtext, nav links</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Typography Hierarchy & Spatial Grid (Width 640px) -->
+  <g transform="translate(740, 140)">
+    <rect width="640" height="710" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)"/>
+
+    <g transform="translate(24, 24)">
+      <text x="0" y="16" class="font-sans" font-size="16" font-weight="700" fill="#F8FAFC">TYPOGRAPHY HIERARCHY SCALE</text>
+      <text x="0" y="34" class="font-sans mono" font-size="11" fill="#64748B">Primary Font Family: Inter / Apple SF Pro Display</text>
+
+      <!-- Display Hero -->
+      <g transform="translate(0, 60)">
+        <text x="0" y="40" class="font-sans" font-size="44" font-weight="800" fill="#F8FAFC" letter-spacing="-1.5">Hero Display (56px)</text>
+        <text x="0" y="60" class="font-sans mono" font-size="11" fill="#34D399">Font: Inter ExtraBold • Size: 56px • Line-Height: 64px • Tracking: -0.03em</text>
+      </g>
+
+      <line x1="0" y1="140" x2="590" y2="140" stroke="rgba(255,255,255,0.06)"/>
+
+      <!-- Heading 1 -->
+      <g transform="translate(0, 155)">
+        <text x="0" y="30" class="font-sans" font-size="32" font-weight="700" fill="#F8FAFC" letter-spacing="-1">Heading 1 / Section Titles (36px)</text>
+        <text x="0" y="50" class="font-sans mono" font-size="11" fill="#34D399">Font: Inter Bold • Size: 36px • Line-Height: 44px • Tracking: -0.02em</text>
+      </g>
+
+      <line x1="0" y1="220" x2="590" y2="220" stroke="rgba(255,255,255,0.06)"/>
+
+      <!-- Heading 2 -->
+      <g transform="translate(0, 235)">
+        <text x="0" y="24" class="font-sans" font-size="24" font-weight="700" fill="#F8FAFC">Heading 2 / Card Titles (24px)</text>
+        <text x="0" y="44" class="font-sans mono" font-size="11" fill="#34D399">Font: Inter SemiBold • Size: 24px • Line-Height: 32px • Tracking: -0.01em</text>
+      </g>
+
+      <line x1="0" y1="295" x2="590" y2="295" stroke="rgba(255,255,255,0.06)"/>
+
+      <!-- Body Large -->
+      <g transform="translate(0, 310)">
+        <text x="0" y="20" class="font-sans" font-size="18" font-weight="400" fill="#F8FAFC">Body Large / Lead In Paragraphs (18px)</text>
+        <text x="0" y="42" class="font-sans mono" font-size="11" fill="#34D399">Font: Inter Regular • Size: 18px • Line-Height: 28px • Paragraph Gap: 16px</text>
+      </g>
+
+      <line x1="0" y1="370" x2="590" y2="370" stroke="rgba(255,255,255,0.06)"/>
+
+      <!-- Body Regular -->
+      <g transform="translate(0, 385)">
+        <text x="0" y="18" class="font-sans" font-size="15" font-weight="400" fill="#94A3B8">Body Regular / Card &amp; Feature Descriptions (15px)</text>
+        <text x="0" y="38" class="font-sans mono" font-size="11" fill="#34D399">Font: Inter Regular/Medium • Size: 15px • Line-Height: 24px</text>
+      </g>
+
+      <line x1="0" y1="440" x2="590" y2="440" stroke="rgba(255,255,255,0.06)"/>
+
+      <!-- Caption & Badge -->
+      <g transform="translate(0, 455)">
+        <text x="0" y="16" class="font-sans" font-size="12" font-weight="700" fill="#34D399" letter-spacing="1">STATUS PILL &amp; CAPTION (12PX UPPERCASE)</text>
+        <text x="0" y="36" class="font-sans mono" font-size="11" fill="#34D399">Font: Inter SemiBold • Size: 12px • Line-Height: 16px • Tracking: +0.06em</text>
+      </g>
+
+      <line x1="0" y1="510" x2="590" y2="510" stroke="rgba(255,255,255,0.06)"/>
+
+      <!-- SPATIAL 8-POINT GRID SYSTEM -->
+      <g transform="translate(0, 525)">
+        <text x="0" y="18" class="font-sans" font-size="15" font-weight="700" fill="#F8FAFC">8-POINT SPATIAL GRID SYSTEM</text>
+        <g transform="translate(0, 35)">
+          <rect x="0" y="0" width="8" height="30" fill="#10B981"/>
+          <text x="0" y="46" class="font-sans mono" font-size="9" fill="#94A3B8">8px</text>
+          
+          <rect x="24" y="0" width="16" height="30" fill="#10B981" opacity="0.9"/>
+          <text x="24" y="46" class="font-sans mono" font-size="9" fill="#94A3B8">16px</text>
+          
+          <rect x="56" y="0" width="24" height="30" fill="#10B981" opacity="0.8"/>
+          <text x="56" y="46" class="font-sans mono" font-size="9" fill="#94A3B8">24px</text>
+          
+          <rect x="96" y="0" width="32" height="30" fill="#10B981" opacity="0.7"/>
+          <text x="96" y="46" class="font-sans mono" font-size="9" fill="#94A3B8">32px</text>
+          
+          <rect x="144" y="0" width="48" height="30" fill="#10B981" opacity="0.6"/>
+          <text x="144" y="46" class="font-sans mono" font-size="9" fill="#94A3B8">48px</text>
+          
+          <rect x="208" y="0" width="64" height="30" fill="#10B981" opacity="0.5"/>
+          <text x="208" y="46" class="font-sans mono" font-size="9" fill="#94A3B8">64px</text>
+
+          <rect x="288" y="0" width="80" height="30" fill="#10B981" opacity="0.4"/>
+          <text x="288" y="46" class="font-sans mono" font-size="9" fill="#94A3B8">80px (Margins)</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
